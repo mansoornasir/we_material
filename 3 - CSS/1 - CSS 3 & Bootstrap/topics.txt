@@ -1,0 +1,93 @@
+Containers
+    .container (fixed width)
+    .container-fluid (full width)
+    .container-sm|md|lg|xl
+
+Grids
+    12 column layout
+    .col- < 576
+    .col-sm- >= 576
+    .col-md- >= 768
+    .col-lg- >= 992
+    .col-xl- >= 1200
+    .row
+    .col-sm-4 and .col-sm-8
+
+Text/Typography
+    default H1 to H6
+    .display-1 to 4
+    .blockquote for blockquote tag
+    definition list (dl > dt > dd)
+    code
+    kbd
+    pre
+    .text-lowercase
+    .text-uppercase
+    .text-capitalize
+    .lead
+    .font-weight-bold
+    .font-weight-bolder
+    .font-italic
+    .text-left | right | center
+
+Table
+    .table
+    .table-striped
+    .table-bordered
+    .table-hover
+    .table-dark
+    .table-borderless
+    .table-primary | success | danger | info | active | secondary | dark
+    .thead-dark
+    .table-sm
+    .table-responsive
+    .table-responsive-sm|md|lg|xl
+
+Images
+    .rounded
+    .rounded-circle
+    .img-thumbnail
+    .float-right|left
+    .d-block (display as block)
+    .img-fluid
+
+Jumbotron
+    .jumbotron
+    .jumbotron-fluid
+
+Alerts
+    .alert
+    .alert-success | danger | info | primary | secondary
+    .alert-dismissible
+    .alert alert-danger alert-dismissible fade show (animated alerts)
+
+Buttons
+    .btn
+    .btn-info|primary|secondary|success|info|warning|danger|dark|light|link
+    .btn-outline-info|primary|secondary|success|info|warning|danger|dark|light|link
+    .btn-lg|sm
+    .btn-block
+    .disabled
+    button > span.spinner-border spinner-border-sm
+    button > span.spinner-grow spinner-grow-sm
+    .btn-group btn-group-lg (all buttons will be large)
+    .btn-group-vertical
+    dropdown
+        button.btn btn-primary dropdown-toggle and data-toggle="dropdown" immedietly after div.dropdown-menu > a.dropdown-item
+    
+Pagination
+    ul.pagination               
+    li.page-item > a.page-link
+    .active
+    li.disabled
+    .pagination-lg
+    .pagination-sm
+
+List Groups
+Dropdowns
+Collapse
+Tabs and Pills
+Navigation Bar
+Forms
+    Form Inputs
+Carousel
