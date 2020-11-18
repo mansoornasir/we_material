@@ -1,0 +1,30 @@
+document.getElementById(id)
+document.write()
+window.alert()
+console.log()
+Statements
+// Change heading:
+Variables
+Operators
+Data Types (String, Int, Object)
+typeof 
+Functions
+Objects
+Events (onchange, onclick, onmouseover, onmouseout, onkeydown, onload)
+Strings 
+    - (length, indexOf, lastIndexOf, search, slice, substring, replace, toUpperCase(), toLowerCase(), concat, trim, charAt, split)
+Numbers
+    number.toString()
+    toPrecision() 
+    parseFloat()
+    parseInt()
+Arrays (using new and using assignment [])
+    document.getElementById("demo").innerHTML = array
+    arr.length;
+    arr.sort();
+    reverse()
+    join()
+    pop()
+    push()
+    shift()
+    Array.forEach()
