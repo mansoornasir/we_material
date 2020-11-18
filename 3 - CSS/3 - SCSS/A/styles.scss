@@ -1,0 +1,82 @@
+@import "_variables";
+
+@mixin my_border 
+{
+   border-collapse: collapse;
+   border: 1px solid blue;
+   width: 100%;
+   text-align: left;
+   vertical-align: bottom;
+}
+@mixin div-size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+p
+{
+    color: $paraColor;
+}
+h1
+{
+    color: $headings;
+    display: -ms-flexbox;
+}
+div#main
+{
+    height: $height;
+    width: $width;
+}
+
+div#header
+{
+    p
+    {
+        color: $paraColor;
+    }
+    ul
+    {
+        display: inline-block;
+
+        li
+        {
+            display: inline;
+            padding: 10px;
+
+            a
+            {
+                color: burlywood;
+                background: black;
+                padding: 5px;
+                text-decoration: none;
+
+                &:hover
+                {
+                    text-decoration:  underline;
+                }
+            }
+        }
+    }
+
+}
+table#table1
+{
+    @include my_border;
+    th{
+        padding: 5px;
+    }
+    td{
+        padding: 5px;
+    }
+}
+
+table#table2{
+    @include my_border;
+    color: blue; // overriding colors
+}
+
+div#abc
+{
+    @include div-size(100%, 100%);
+}

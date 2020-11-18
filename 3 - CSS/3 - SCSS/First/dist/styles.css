@@ -1,0 +1,9 @@
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+}
+
+body p {
+  color: red;
+}

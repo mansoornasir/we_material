@@ -1,0 +1,9 @@
+Variables
+Nesting (Header > Button)
+Nesting Hover &:hover {}
+Move selectors to external files eg. (_header.scss and @import header) 
+We can also export variables to external files and import it with @import
+Use @mixin as a css function with and without arguments
+Inherit properties to other properties using @extend (with overriding).
+Arithmatic operations (100% - 20%)
+

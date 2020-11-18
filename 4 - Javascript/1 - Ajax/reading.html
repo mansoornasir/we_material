@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+        <div>
+            <button id="btn">Load Data</button>
+        </div>
+        <div id="data"></div>
+
+        <script>
+            document.getElementById("btn").addEventListener("click", loadData);
+
+            function loadData()
+            {
+                xhr = new XMLHttpRequest();
+                xhr.open("GET", "data.txt", true);
+
+                xhr.onreadystatechange = function()
+                {
+                    if(xhr.status == 200 && xhr.readyState == 4)
+                    {
+                         document.getElementById("data").innerHTML = this.responseText;
+                    }
+                };
+                
+                xhr.send();
+            }
+
+        </script>
+
+    </body>
+</html>

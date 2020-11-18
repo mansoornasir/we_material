@@ -1,0 +1,36 @@
+<html>
+<head></head>
+<body>
+    <button id="btn">Load</button>
+    <div id="users"></div>
+
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://api.github.com/users", true);
+
+        document.getElementById("btn").addEventListener("click", loadUsers);
+
+        function loadUsers()
+        {
+            var users = JSON.parse(xhr.responseText);
+            var output = "";
+            for(i in users)
+            {
+                
+                output+= "Login : " + users[i].login + "<br/>";
+                output+= "ID : " + users[i].id + "<br/>";
+                output+= "Type : " + users[i].type + "<br/>";
+                output+= "<img src='"+users[i].avatar_url+"' width = 200 height=200 />"; 
+            }
+            document.getElementById("users").innerHTML = output;
+            
+        }
+
+
+        xhr.send();
+
+
+    </script>
+
+</body>
+</html>

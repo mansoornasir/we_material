@@ -1,0 +1,6 @@
+@mixin paraStyles($color) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: $color;
+    text-align: justify;
+}

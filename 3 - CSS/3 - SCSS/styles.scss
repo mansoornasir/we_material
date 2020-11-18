@@ -1,0 +1,62 @@
+div#testing
+{
+    p
+    {
+        color: blue;
+    }
+    button
+    {
+        &:hover
+        {
+            background: red;
+        }
+        background: cyan;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@mixin orangeButtons($align, $color) {
+    color: cyan;
+        &:hover {
+            color: $color;
+        }
+        justify-content:  center;
+        display: flex;
+        align-items: $align;
+        line-height: 200px;
+        width: 200px;
+}
+
+$bgColor : blue;
+
+header
+{
+    color: $bgColor;
+    background: orange;
+    button
+    {
+        @include orangeButtons(left, blue);
+    }
+}
+
+div
+{
+    @extend header;
+    background: white;
+    width: 100% - 20%;
+}*/

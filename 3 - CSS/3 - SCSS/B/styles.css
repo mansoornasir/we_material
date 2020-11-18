@@ -1,0 +1,28 @@
+div#main p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: gray;
+  text-align: justify;
+}
+
+div#header p, div#news p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: blue;
+  text-align: justify;
+}
+
+div#header p a, div#news p a {
+  color: black;
+  text-decoration: underline;
+}
+
+div#header p a:hover, div#news p a:hover {
+  color: cyan;
+  text-decoration: none;
+}
+
+div#news p {
+  color: tan;
+}
+/*# sourceMappingURL=styles.css.map */

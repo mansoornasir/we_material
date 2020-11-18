@@ -1,0 +1,23 @@
+.container-1 {
+    display: flex;
+    /* align-items: flex-end; flex-start, center, stretch*/
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+}
+.container-1 div {
+    border: 1px solid #ccc;
+    padding: 10px
+}
+
+.box-1 {
+    flex: 2;
+    order: 2; /* changes the order of the boxes*/
+}
+.box-2 {
+    flex: 1;
+    order: 1;
+}
+.box-3 {
+    flex: 1;
+    order: 3
+}

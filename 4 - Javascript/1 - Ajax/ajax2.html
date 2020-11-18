@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo"></div>
+<h2>Github Users</h2>
+
+<div>
+    <button id="loadButton">Load Users</button>
+</div>
+
+<div id="displayUsers"></div>
+<script>
+document.getElementById('loadButton').addEventListener("click", loadUsers);
+
+function loadDoc() 
+{
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "data.txt", true);
+  xhttp.send();
+}
+function loadUsers()
+{
+    console.log("Reached");
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://api.github.com/users", true);
+    xhr.onreadystatechange = function() 
+    {
+        if(this.readyState == 4 && this.status == 200)
+        {
+            var users = JSON.parse(this.responseText);
+            for(var i in users)
+            {
+                var output = output + "<ul>" + 
+                                        "<li>ID: "+users[i].id+"</li>" + 
+                                        "<li><img width=100 height=100 src='"+users[i].avatar_url+"' /></li>" +
+                                        "<li>Login: "+users[i].login+"</li>" + 
+                                        "<li>Type: "+users[i].type+"</li>" + 
+                                    "</ul>";
+            }
+            document.getElementById("displayUsers").innerHTML = output;
+        }
+    };
+    xhr.send();
+}
+
+</script>
+
+</body>
+</html>

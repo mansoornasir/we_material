@@ -1,0 +1,68 @@
+p {
+  color: gray;
+}
+
+h1 {
+  color: blue;
+  display: -ms-flexbox;
+}
+
+div#main {
+  height: 500px;
+  width: 500px;
+}
+
+div#header p {
+  color: gray;
+}
+
+div#header ul {
+  display: inline-block;
+}
+
+div#header ul li {
+  display: inline;
+  padding: 10px;
+}
+
+div#header ul li a {
+  color: burlywood;
+  background: black;
+  padding: 5px;
+  text-decoration: none;
+}
+
+div#header ul li a:hover {
+  text-decoration: underline;
+}
+
+table#table1 {
+  border-collapse: collapse;
+  border: 1px solid blue;
+  width: 100%;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+table#table1 th {
+  padding: 5px;
+}
+
+table#table1 td {
+  padding: 5px;
+}
+
+table#table2 {
+  border-collapse: collapse;
+  border: 1px solid blue;
+  width: 100%;
+  text-align: left;
+  vertical-align: bottom;
+  color: blue;
+}
+
+div#abc {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

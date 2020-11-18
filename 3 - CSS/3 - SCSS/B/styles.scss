@@ -1,0 +1,45 @@
+@import "_variables";
+@import "_mixins";
+
+
+div#main
+{
+    p
+    {
+        @include paraStyles(gray);
+    }
+}
+
+div#header
+{
+    p
+    {
+        @include paraStyles(blue);
+        a
+        {
+            color: black;
+            text-decoration:  underline;
+            &:hover
+            {
+                color: $linkColor;
+                text-decoration: none;
+            }
+        }
+    }
+    h2
+    {
+        
+    }
+    button
+    {
+
+    }
+
+}
+div#news
+{
+    @extend div#header;
+    p{
+        color: tan;
+    }
+}

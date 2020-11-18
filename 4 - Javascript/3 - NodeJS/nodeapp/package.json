@@ -1,0 +1,17 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "This is the first node js application.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "npx nodemon"
+  },
+  "author": "Mansoor Nasir",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^15.2.1",
+    "requests": "^0.3.0"
+  },
+  "devDependencies": {}
+}

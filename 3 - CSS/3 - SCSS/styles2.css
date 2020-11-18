@@ -1,0 +1,18 @@
+body {
+  background: #ccc;
+}
+
+.container {
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.container p {
+  color: red;
+}
+/*# sourceMappingURL=styles2.css.map */

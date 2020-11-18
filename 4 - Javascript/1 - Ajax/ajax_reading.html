@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Loading Data using AJAX</title>
+    </head>
+
+    <body>
+        <button id="btn">Load</button>
+        <div id="data"></div>
+
+        <script>
+            var button = document.getElementById("btn");
+            button.addEventListener("click", loadData);
+
+            function loadData()
+            {
+                var txt;
+                xhr = new XMLHttpRequest();
+                xhr.open("GET", "data.json", true);
+
+                xhr.onreadystatechange = function()
+                {
+                    if(xhr.status == 200 && xhr.readyState == 4)
+                    {
+                        txt = JSON.parse(xhr.responseText);
+
+                        document.getElementById("data").innerHTML = txt[0].cars["car1"];
+                    }
+                };
+
+                xhr.send();    
+
+
+
+            }
+        </script>
+
+
+    </body>
+
+
+
+</html>

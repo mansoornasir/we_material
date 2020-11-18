@@ -1,0 +1,11 @@
+body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+}
+$textColor: red;
+body {
+    p {
+        color: $textColor;
+    }
+}

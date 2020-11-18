@@ -1,0 +1,98 @@
+1 - const, let and var
+2 - redeclaration in let is not allowed but in var is.
+3 - Using back ticks to concatenate variables in side the string using ${};
+4 - Return objects does not require repetition 
+return {
+        title: title,
+        author: author
+    }
+
+return {
+        title,
+        author
+    }
+
+5 - Object Deconstruction
+
+var user = {
+    name: 'Mansoor',
+    age: 25
+}
+var myName = user.name;
+console.log(myName);
+//
+const {name, items} = list;
+console.log(items);
+
+6 - Arrow Functions
+
+const loc = function(location) =>
+{
+    console.log(`Unknow locaiton is ${location}`);
+}
+
+loc("Paris");
+
+We can get rid of the word "function" 
+We can remove paranthesis if we have only one parameter
+If we have only one line inside the function then we can remove curly braces.
+
+
+7 - Default Arguments
+function div(x, y)
+{
+    y = y || 1
+    x = x || 1
+    console.log(x/y);
+}
+
+8 - Array functions
+-- foreach
+list.forEach( (item,index) => {
+    console.log(item + " is on index " + index) ;
+})
+-- copy list items using map
+const list = ['Milk', 'Cow', 'Eggs', 'Bananas'];
+const newList = list.map(item => {
+    return item + "New";
+});
+console.log(newList)
+-- filters
+const list = ['Milk', 'Cow', 'Eggs', 'Bananas'];
+const filterList = list.filter(item=>{
+    return item === "Bananas";
+})
+console.log(filterList);
+
+
+9 - Classes
+
+class ShoppingList
+{
+    constructor(items, nr)
+    {
+        this.items = items;
+        this.nr = nr;
+    }
+    sayList()
+    {
+        console.log(this.items);
+    }
+}
+
+class Product extends ShoppingList
+{
+    constructor(items, nr, amount, cost)
+    {
+        super(items, nr);
+        this.amount = amount;
+        this.cost = cost;
+    }
+}
+const myList = new ShoppingList(["a", "b", "c"], 3);
+const prod = new Product(["x", "y", "z"], 3, 2, 20);
+
+prod.sayList();
+myList.sayList();
+
+10 - Promises

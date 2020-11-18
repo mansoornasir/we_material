@@ -1,0 +1,16 @@
+$color: red;
+
+body {
+    background:#ccc;
+}
+.container {
+    color: $color;
+    display: flex;
+    justify-content: baseline;
+}
+.container{
+    p {
+        color: red;
+    }
+
+}

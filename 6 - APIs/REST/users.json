@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Ilyas",
+        "rollno": 161352,
+        "GPA": 3.07,
+        "isProgrammer": false,
+        "Local": null
+    },
+    {
+        "name": "Safi Ullah",
+        "rollno": 161373,
+        "GPA": 3.8,
+        "isProgrammer": true,
+        "Local": null
+    }
+]

@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+    <button id="btn">Load</button>
+    <div id="users"></div>
+
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://skew.com/d-solo/hYed6CTmz/bitcoin-options?orgId=1&to=now&from=now-3M&panelId=76&theme=light&refresh=30s", true);
+
+        document.getElementById("btn").addEventListener("click", loadUsers);
+
+        function loadUsers()
+        {
+            var users = JSON.parse(xhr.responseText);
+            
+            print(users)
+            
+        }
+
+
+        xhr.send();
+
+
+    </script>
+
+</body>
+</html>
