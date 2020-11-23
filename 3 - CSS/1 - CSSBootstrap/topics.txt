@@ -85,11 +85,40 @@ Pagination
     .pagination-sm
 
 List Groups
-Dropdowns
+    ul.list-group
+    li.list-group-item
+    li.list-group-item active
+    li.list-group-item disabled
+    list-group-item-success|info|warning|danger
+    li.list-group-item > span.badge
+    h4.list-group-item-heading
+    p.list-group-item-text
 
+Dropdowns
+    div.dropdown | dropright | dropleft | dropup
+        button.dropdown-toggle data-toggle='dropdown'
+        div.dropdown-menu
+            a.dropdown-menu-item
+            div.dropdown-divider
+            h5.dropdown-header
+            active
+            disabled
+    Grouped buttons
+        div.btn-group | vertical
+            buttons (1 or 2)
+            div.btn-group
+                button.dropdown-toggle (split) data-toggle='dropdown'
+                div.dropdown-menu
+                    a.dropdown-item
+                    a.dropdown-item
 Collapse
+    button data-toggle='collapse' data-target='#test'
+    div#test.collapse (show) > text
+    accordian
+
 Tabs and Pills
 Navigation Bar
+    
 Forms
     Form Inputs
 Carousel
