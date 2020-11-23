@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Awsome Company</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div#container {
+            margin: 0 auto;
+            width: 700px;
+            height: 700px;
+            border: 1px solid red;
+        }
+
+        div#header {
+            width: 700px;
+            height: 100px;
+        }
+
+        div#header div#logo {
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+
+        div#header div#company-title h2 {
+            font-size: 40px;
+            text-transform: uppercase;
+            float: left
+        }
+
+        div#header div#search {
+            float: right;
+            padding-top: 25px;
+            padding-right: 5px;
+        }
+
+        div#navbar {
+            width: 700px;
+            height: 50px;
+        }
+
+        div#navbar ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        div#navbar ul li {
+            display: inline-block;
+            margin: 15px;
+        }
+
+        div#navbar ul li a {
+            display: block;
+            width: 60px;
+            height: 20px;
+            text-decoration: none;
+            background: black;
+            color: white;
+        }
+
+        div#navbar ul li a:hover {
+
+            text-decoration: underline;
+            background: rgb(18, 209, 243);
+            color: black;
+        }
+
+        div#main div#left {
+            float: left;
+            width: 20%;
+            height: 450px;
+            border: 1px solid red;
+        }
+
+        div#main div#left ul {
+            list-style-type: none;
+        }
+
+        div#main div#left ul li {
+            margin: 15px;
+        }
+
+        div#main div#left ul li a {
+            display: block;
+            width: 60px;
+            height: 20px;
+            text-decoration: none;
+            background: black;
+            color: white;
+        }
+
+        div#main div#center {
+            float: left;
+            width: 60%;
+            height: 450px;
+            border: 1px solid green;
+        }
+
+        div#main div#right {
+            float: left;
+            width: 19%;
+            height: 450px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <img src="a.jpg" width="100" height="100">
+            </div>
+            <div id="company-title">
+                <h2>an awesome company</h2>
+            </div>
+            <div id="search">
+                <form id="search-form" action="#" method="post">
+                    <input type="text" name="input-search" id="input-search">
+                    <input type="submit" name="submit-btn" id="submit-btn">
+                </form>
+            </div>
+        </div>
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="main">
+            <div id="left">
+                <aside>
+                    <ul>
+                        <li><a href="#">Links 1</a></li>
+                        <li><a href="#">Links 2</a></li>
+                        <li><a href="#">Links 3</a></li>
+                        <li><a href="#">Links 4</a></li>
+                        <li><a href="#">Links 5</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div id="center">
+                <div id="post">
+                    <div id="post-img">
+                        <img src="a.jpg" width="100" height="100">
+                    </div>
+                    <div id="post-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus modi ipsam
+                            illum! Fuga sint tenetur amet, eligendi, doloribus sapiente veritatis provident nesciunt
+                            esse
+                            porro distinctio quos iste culpa non dignissimos!</p>
+                    </div>
+                </div>
+                <div id="buttons">
+                    <form id="form-buttons" method="post" action="#">
+                        <input type="radio" name="appropriate" id="above" value="above">
+                        <input type="radio" name="appropraite" id="below" value="below">
+                        <input type="submit" name="post-submit" id="post-submit" value="Post">
+                    </form>
+                </div>
+                <div id="pagination">
+                    <ul>
+                        <li><a href="#">Previous</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right"></div>
+        </div>
+        <div id="footer">
+            <ul>
+                <li><a href="#">Links 1</a></li>
+                <li><a href="#">Links 2</a></li>
+                <li><a href="#">Links 3</a></li>
+                <li><a href="#">Links 4</a></li>
+                <li><a href="#">Links 5</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

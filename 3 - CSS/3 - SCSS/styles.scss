@@ -1,62 +1,16 @@
-div#testing
-{
-    p
-    {
-        color: blue;
-    }
-    button
-    {
-        &:hover
-        {
-            background: red;
-        }
-        background: cyan;
-    }
+@import 'variables';
+
+@mixin paraStyles($color, $size) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $size;
+    color: $color;
+    text-align: justify;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*@mixin orangeButtons($align, $color) {
-    color: cyan;
-        &:hover {
-            color: $color;
-        }
-        justify-content:  center;
-        display: flex;
-        align-items: $align;
-        line-height: 200px;
-        width: 200px;
-}
-
-$bgColor : blue;
-
-header
-{
-    color: $bgColor;
-    background: orange;
-    button
-    {
-        @include orangeButtons(left, blue);
+div#container {
+    width: $width;
+    height: $height;
+    p {
+        @include paraStyles(blue, 10px)
     }
 }
-
-div
-{
-    @extend header;
-    background: white;
-    width: 100% - 20%;
-}*/

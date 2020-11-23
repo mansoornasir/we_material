@@ -12,7 +12,19 @@ Functions
 Objects
 Events (onchange, onclick, onmouseover, onmouseout, onkeydown, onload)
 Strings 
-    - (length, indexOf, lastIndexOf, search, slice, substring, replace, toUpperCase(), toLowerCase(), concat, trim, charAt, split)
+    - (length, 
+    - indexOf, 
+    lastIndexOf, 
+    search, 
+    slice, 
+    substring, 
+    replace, 
+    toUpperCase(), 
+    toLowerCase(), 
+    concat, 
+    trim, 
+    charAt, 
+    split)
 Numbers
     number.toString()
     toPrecision() 

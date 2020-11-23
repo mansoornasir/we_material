@@ -3,6 +3,7 @@ Containers
     .container-fluid (full width)
     .container-sm|md|lg|xl
 
+
 Grids
     12 column layout
     .col- < 576
@@ -85,6 +86,7 @@ Pagination
 
 List Groups
 Dropdowns
+
 Collapse
 Tabs and Pills
 Navigation Bar

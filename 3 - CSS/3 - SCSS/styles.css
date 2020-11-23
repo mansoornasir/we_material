@@ -1,43 +1,12 @@
-div#testing p {
+div#container {
+  width: 600px;
+  height: 600px;
+}
+
+div#container p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
   color: blue;
+  text-align: justify;
 }
-
-div#testing button {
-  background: cyan;
-}
-
-div#testing button:hover {
-  background: red;
-}
-
-/*@mixin orangeButtons($align, $color) {
-    color: cyan;
-        &:hover {
-            color: $color;
-        }
-        justify-content:  center;
-        display: flex;
-        align-items: $align;
-        line-height: 200px;
-        width: 200px;
-}
-
-$bgColor : blue;
-
-header
-{
-    color: $bgColor;
-    background: orange;
-    button
-    {
-        @include orangeButtons(left, blue);
-    }
-}
-
-div
-{
-    @extend header;
-    background: white;
-    width: 100% - 20%;
-}*/
 /*# sourceMappingURL=styles.css.map */
