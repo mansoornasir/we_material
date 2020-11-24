@@ -85,6 +85,7 @@ Pagination
     .pagination-sm
 
 List Groups
+
     ul.list-group
     li.list-group-item
     li.list-group-item active
@@ -98,7 +99,7 @@ Dropdowns
     div.dropdown | dropright | dropleft | dropup
         button.dropdown-toggle data-toggle='dropdown'
         div.dropdown-menu
-            a.dropdown-menu-item
+            a.dropdown-item
             div.dropdown-divider
             h5.dropdown-header
             active
