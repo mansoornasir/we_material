@@ -1,9 +1,9 @@
+** VS Code extension for Bootstrap is 'HTML CSS Support' **
+
 Containers
     .container (fixed width)
     .container-fluid (full width)
     .container-sm|md|lg|xl
-
-
 Grids
     12 column layout
     .col- < 576
@@ -13,7 +13,6 @@ Grids
     .col-xl- >= 1200
     .row
     .col-sm-4 and .col-sm-8
-
 Text/Typography
     default H1 to H6
     .display-1 to 4
@@ -30,7 +29,6 @@ Text/Typography
     .font-weight-bolder
     .font-italic
     .text-left | right | center
-
 Table
     .table
     .table-striped
@@ -115,10 +113,83 @@ Dropdowns
 Collapse
     button data-toggle='collapse' data-target='#test'
     div#test.collapse (show) > text
-    accordian
+    Accordian
+        div#accordian
+            div.card
+                div.card-header
+                    a.(collapsed ) card-link data-toggle="collapse" href="#one"
+                div#one .collapse show data-parent="#accordian"
+                    div.card-body
 
-Tabs and Pills
 Navigation Bar
+    Basic Navbar
+        nav.navbar navbar-expand-sm bg-light|dark|primary (remove expand-sm for vertical)
+            ul.navbar-nav
+                li.nav-item
+                    a.nav-link
+    Centered Navbar
+        nav.navbar navbar-expand-sm bg-light justify-content-center
+    Navbar with Logo/Text
+        nav.navbar navbar-expand-sm bg-dark navbar-dark
+            a.navbar-brand
+                img
+    Collapsing Navbar
+        nav.navbar navbar-expand-md bg-dark navbar-dark
+            a.navbar-brand
+            button.navbar-toggler data-toggle="collapse" data-target="#test"
+                span.navbar-toggler-icon
+            div.collapse navbar-collapse id="test"
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link    
+    Navbar with Forms and buttons
+        nav.navbar navbar-expand-sm bg-dark navbar-dark
+            form.form-inline
+                input.form-control mr-sm-2
+                button.btn btn-success
+    Fixed Top Navbar
+        nav.navbar navbar-expand-sm bg-dark navbar-dark fixed-top
 Forms
-    Form Inputs
+    form
+        div.form-group|form-inline
+            label
+            input.form-control text
+            label
+            input.form-control passwd
+        div.form-group form-check (for checkbox)
+            label.form-check-label
+                input.form-check-input type='checkbox'
+    validation
+        form   
+            div.form-group (for username)
+                label
+                input.form-control required
+                div.valid-feedback
+                div.invalid-feedback
+            div.form-group (for password)
+                label
+                input.form-control required
+                div.valid-feedback
+                div.invalid-feedback
+            div.form-group form-check (for checkbox)
+                label.form-check-label
+                    input.form-check-input required
+                    div.valid-feedback
+                    div.invalid-feedback
 Carousel
+    div#test .carousel slide data-ride='carousel'
+        ul.carousel-indicators
+            li.active data-target='#test' data-slide-to="0"
+            li.active data-target='#test' data-slide-to="1"
+            li.active data-target='#test' data-slide-to="2"
+        div.carousel-inner
+            div.carousel-item active
+                img
+            div.carousel-item
+                img
+            div.carouse-item
+                img
+        a.carousel-control-prev href="#test" data-slide="prev"
+            span.carousel-control-prev-icon
+        a.carousel-control-next href="#test" data-slide="next"
+            span.carousel-control-next-icon

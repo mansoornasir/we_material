@@ -14,24 +14,29 @@
 
 <body>
     <div class="container">
-        <div class="dropdown">
-            <button class="dropdown-toggle btn btn-secondary" data-toggle="dropdown">Main Menu</button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Computer Science</a>
-                <a class="dropdown-item" href="#">information Technology</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropdown-toggle btn btn-secondary" data-toggle="dropdown">Main Menu 1</button>
-            <button class="dropdown-toggle btn btn-secondary" data-toggle="dropdown">Main Menu 2</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Menu Item 1</button>
+            <button type="button" class="btn btn-primary">Menu Item 2</button>
             <div class="btn-group">
-
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Testing 1
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Test 1</a>
+                    <a class="dropdown-item" href="#">Test 2</a>
+                </div>
             </div>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Computer</a>
-                <a class="dropdown-item" href="#">information</a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Testing 2
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Item 1</a>
+                    <a class="dropdown-item" href="#">Item 2</a>
+                </div>
             </div>
         </div>
+
     </div>
 
 
