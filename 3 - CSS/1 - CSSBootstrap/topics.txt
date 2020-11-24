@@ -119,7 +119,6 @@ Collapse
 
 Tabs and Pills
 Navigation Bar
-    
 Forms
     Form Inputs
 Carousel
