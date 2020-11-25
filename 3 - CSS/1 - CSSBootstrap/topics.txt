@@ -43,12 +43,12 @@ Table
     .table-responsive-sm|md|lg|xl
 
 Images
+    .img-fluid (responsive)
     .rounded
     .rounded-circle
     .img-thumbnail
     .float-right|left
     .d-block (display as block)
-    .img-fluid
 
 Jumbotron
     .jumbotron
