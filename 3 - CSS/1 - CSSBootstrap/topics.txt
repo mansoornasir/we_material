@@ -83,7 +83,6 @@ Pagination
     .pagination-sm
 
 List Groups
-
     ul.list-group
     li.list-group-item
     li.list-group-item active
@@ -160,7 +159,7 @@ Forms
             label.form-check-label
                 input.form-check-input type='checkbox'
     validation
-        form   
+        form.was-validated   
             div.form-group (for username)
                 label
                 input.form-control required

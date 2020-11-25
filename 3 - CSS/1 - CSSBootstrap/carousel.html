@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="./assets/popper.min.js"></script> -->
+    <script src="./assets/bootstrap.min.js"></script>
+</head>
+
+<body style="background: black;">
+    <div class="container">
+
+        <div id="test" class="carousel slide" data-ride='carousel'>
+            <ul class="carousel-indicators">
+                <li class="active" data-target='#test' data-slide-to="0"></li>
+                <li data-target='#test' data-slide-to="1"></li>
+                <li data-target='#test' data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="1.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="1.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="1.jpg">
+                </div>
+            </div>
+            <a href="#test" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#test" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

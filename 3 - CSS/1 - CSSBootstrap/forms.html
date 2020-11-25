@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="./assets/popper.min.js"></script> -->
+    <script src="./assets/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="form-group">
+            <form class="was-validated">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" class="form-control" required>
+                <div class="valid-feedback">Username is Valid!</div>
+                <div class="invalid-feedback">Username is not valid</div>
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password" class="form-control" required>
+                <div class="valid-feedback">Password is Valid!</div>
+                <div class="invalid-feedback">Password is not valid</div>
+                <div class="form-group form-check">
+                    <label for="terms" class="form-check-label">
+                        <input type="checkbox" id="terms" name="terms" class="form-check-input" required>
+                        Agree With Terms & Conditions</label>
+                    <div class="valid-feedback">Password is Valid!</div>
+                    <div class="invalid-feedback">Password is not valid</div>
+                </div>
+                <input type="submit" value="Login" id="login" name="login">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
