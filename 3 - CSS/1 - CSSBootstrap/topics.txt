@@ -84,13 +84,14 @@ Pagination
 
 List Groups
     ul.list-group
-    li.list-group-item
-    li.list-group-item active
-    li.list-group-item disabled
-    list-group-item-success|info|warning|danger
-    li.list-group-item > span.badge
+            li.list-group-item
+            li.list-group-item active
+            li.list-group-item disabled
+    ul.list-group-item-success|info|warning|danger
+        li.list-group-item
+            span.badge
     h4.list-group-item-heading
-    p.list-group-item-text
+        p.list-group-item-text
 
 Dropdowns
     div.dropdown | dropright | dropleft | dropup
@@ -116,7 +117,7 @@ Collapse
         div#accordian
             div.card
                 div.card-header
-                    a.(collapsed ) card-link data-toggle="collapse" href="#one"
+                    a.card-link data-toggle="collapse" href="#one"
                 div#one .collapse show data-parent="#accordian"
                     div.card-body
 

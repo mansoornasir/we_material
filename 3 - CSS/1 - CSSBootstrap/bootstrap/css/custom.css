@@ -1,0 +1,12 @@
+body > div > button:nth-child(3) {
+  background: red;
+}
+tr.table-danger td {
+  color: white;
+  background-color: red;
+}
+.table-hover .table-danger:hover > td,
+.table-hover .table-danger:hover > th {
+  color: white;
+  background: black;
+}
