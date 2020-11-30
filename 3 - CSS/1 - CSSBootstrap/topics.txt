@@ -151,7 +151,7 @@ Navigation Bar
         nav.navbar navbar-expand-sm bg-dark navbar-dark fixed-top
 Forms
     form
-        div.form-group|form-inline
+        div.form-group|form-inline.was-validated
             label
             input.form-control text
             label
@@ -180,8 +180,8 @@ Carousel
     div#test .carousel slide data-ride='carousel'
         ul.carousel-indicators
             li.active data-target='#test' data-slide-to="0"
-            li.active data-target='#test' data-slide-to="1"
-            li.active data-target='#test' data-slide-to="2"
+            li data-target='#test' data-slide-to="1"
+            li data-target='#test' data-slide-to="2"
         div.carousel-inner
             div.carousel-item active
                 img
