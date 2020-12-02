@@ -1,0 +1,34 @@
+@import "variables";
+
+@mixin paragraph($fontSize) {
+  line-height: 10px;
+  font-weight: normal;
+  font-size: $fontSize;
+  color: rgb(68, 68, 68);
+}
+p {
+  color: $color;
+}
+
+button {
+  color: white;
+  background: green;
+  width: 50px;
+  height: 50px;
+}
+p {
+  @include paragraph(20px);
+  a {
+    text-decoration: none;
+    color: $headingColor;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+button#btn {
+  @extend button;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

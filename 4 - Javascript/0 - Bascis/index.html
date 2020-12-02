@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+</head>
+
+<body>
     <script>
-        function clicked() {
-            console.log('clicked.')
-            document.getElementById('test').innerHTML = " Button Clicked"
-            a = document.getElementById('test').innerHTML
-            console.log(a)
+        var age = 10;
+
+        if (age >= 1 && age < 20) {
+            console.log('Adolesent');
         }
-        function over() {
-            document.getElementById('over_div').innerHTML = "Mouse is over"
+        if (age >= 20 && age <= 60) {
+            console.log('Adulthood');
         }
-        function mouseOut() 
-        {
-            document.getElementById('over_div').innerHTML = ""
-        }
-        function validate() {
-            document.getElementById('star').innerHTML = "*"
+        if (age > 60) {
+            console.log('Old Age');
         }
     </script>
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <b><div id="test">sdjaldkfjlkj</div></b>
-    <div id="over_div"></div>
-    <button onclick="clicked()">Click</button>
-    <button onmouseover="over()" onmouseout="mouseOut()">Click</button>
-    <input type="text" onfocus="validate()" onblur=""><label id="star"></label>
 </body>
+
 </html>

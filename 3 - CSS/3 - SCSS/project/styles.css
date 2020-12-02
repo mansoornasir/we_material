@@ -1,0 +1,32 @@
+p {
+  color: red;
+}
+
+button, button#btn {
+  color: white;
+  background: green;
+  width: 50px;
+  height: 50px;
+}
+
+p {
+  line-height: 10px;
+  font-weight: normal;
+  font-size: 20px;
+  color: #444444;
+}
+
+p a {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+button#btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */
